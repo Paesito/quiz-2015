@@ -2,7 +2,7 @@
 // exportamos question
 exports.question = function (req , res){
 
-	res.render('quizes/question', {pregunta : 'Capital de Italia'});
+	res.render('quizes/question', {pregunta : 'Capital de Italia ?'});
 
 };
 
