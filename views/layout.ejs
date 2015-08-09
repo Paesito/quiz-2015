@@ -9,8 +9,18 @@
 
 		<title>Preguntas</title>
 	
+		<!--Pantalla de un PC-->
 		<link rel="stylesheet" type="text/css" href="/stylesheet/style.css">
-		
+		<!--Pantalla ancha-->
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="/stylesheet/wide.css"
+			  media='only screen and (min-width: 530px) and (min-device-width: 481px)'>
+		<!--Pantalla de un Smartphone-->
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="/stylesheet/smartphone.css"
+			  media='only screen and (max-width: 480px)'>
 
 	</head>
 
@@ -18,28 +28,28 @@
 		
 		<div id='Contenedor'>
 		
-			<header>
+			<header class='main' id='h1'>
 			
-				<h2>Quiz el Juego de las Preguntas</h2>
+				<h2>Quiz<apan>: el Juego de las Preguntas</span></h2>
 
 			</header>
 
-			<nav>
+			<nav class='main' id='n1'>
 				
 				<span><a href="/">Inicio</a></span>
 				<span><a href="/quizes/question">Preguntas</a></span>
 
 			</nav>
 
-			<section>
+			<section class='main' id='s1'>
 
 				<br>
-
-				<%-	body %>
+				<!--Carga el Body de los demas html-->
+				<div> <%- body %> </div>
 
 			</section>
 
-			<footer>
+			<footer class='main' id='f1'>
 				
 				<a href='http://es.wikipedia.org/wiki/quiz'>¿Ques es un Quiz?</a>
 
